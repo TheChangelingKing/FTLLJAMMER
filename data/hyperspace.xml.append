@@ -1,0 +1,186 @@
+<!-- 
+**********************************************************************************************************************
+                                        TABLE OF CONTENTS
+1. SHIPS HYPERSPACE, Line 13
+2. AUGMENTS HYPERSPACE, Line 47
+3. CREW HYPERSPACE, Line 58
+4. MISCELLANEOUS HYPERSPACE, Line 142
+**********************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                        SHIPS HYPERSPACE
+**********************************************************************************************************************
+-->
+
+<mod:findLike type="ships" limit="1">
+	<mod-append:ship name="SJ_BOMBARD_A" a="true" b="false" c="false" />
+	<mod-append:customShip name="SJ_BOMBARD_A">
+		<crewLimit>8</crewLimit>
+		<systemLimit>8</systemLimit>
+	</mod-append:customShip>
+</mod:findLike>
+
+<mod:findLike type="ships" limit="1">
+	<mod-append:ship name="SJ_SMALLJAMMER_A" a="true" b="false" c="false" />
+	<mod-append:customShip name="SJ_SMALLJAMMER_A">
+		<crewLimit>6</crewLimit>
+		<systemLimit>8</systemLimit>
+        <hiddenAug>SHIP_AUTO</hiddenAug>
+        <hiddenAug>SJ_SMALLJAMMER_TIMIDNESS</hiddenAug>
+        <hiddenAug>EX_BREACH_SEALANT</hiddenAug>
+        <autoShipForce>true</autoShipForce>
+	</mod-append:customShip>
+</mod:findLike>
+
+<mod:findLike type="ships" limit="1">
+	<mod-append:ship name="SJ_CITADEL_A" a="true" b="false" c="false" />
+	<mod-append:customShip name="SJ_CITADEL_A">
+		<crewLimit>16</crewLimit>
+		<systemLimit>8</systemLimit>
+	</mod-append:customShip>
+</mod:findLike>
+
+<mod:findLike type="ships" limit="1">
+	<mod-append:ship name="SJ_MAN'O'WAR_A" a="true" b="false" c="false" />
+	<mod-append:customShip name="SJ_MAN'O'WAR_A">
+		<crewLimit>8</crewLimit>
+		<systemLimit>8</systemLimit>
+	</mod-append:customShip>
+</mod:findLike>
+
+<!-- 
+**********************************************************************************************************************
+                                        AUGMENTS HYPERSPACE
+**********************************************************************************************************************
+-->
+<augments>
+    <aug name="SJ_CITADEL_ARMOR">
+    	<function name="ROCK_ARMOR" value="0.50" useForReqs="true" warning="false"/>
+		<locked/>
+    </aug>    
+
+</augments>
+<!-- 
+**********************************************************************************************************************
+                                        CREW HYPERSPACE
+**********************************************************************************************************************
+-->
+
+<mod:findLike type="crew" limit="1">
+    <mod-append:race name="sj_giff">
+        <lowHealthThreshold>2500.0</lowHealthThreshold>
+        <lowHealthThresholdPercentage>0.25</lowHealthThresholdPercentage>
+        <maxHealth>170</maxHealth>
+        <repairSpeed>0.25</repairSpeed>
+        <damageMultiplier>1.8</damageMultiplier>
+        <skills>
+            <piloting req="30"/>
+            <engines req="30"/>
+            <shields req="110"/>
+            <weapons req="130"/>
+            <repair req="36"/>
+            <combat req="16"/>
+        </skills>
+        <animBase>human</animBase>
+        <animSheet>sj_giff</animSheet>
+        <deathSounds>
+            <deathSound>death1</deathSound>
+            <deathSound>death2</deathSound>
+        </deathSounds>
+    </mod-append:race>
+</mod:findLike>
+
+<mod:findLike type="crew" limit="1">
+    <mod-append:race name="sj_dwarf">
+        <lowHealthThreshold>2500.0</lowHealthThreshold>
+        <lowHealthThresholdPercentage>0.25</lowHealthThresholdPercentage>
+        <maxHealth>120</maxHealth>
+        <visiontype>darkvision</visiontype>
+        <moveSpeedMultiplier>0.83</moveSpeedMultiplier>
+        <repairSpeed>1.2</repairSpeed>
+        <damageMultiplier>1</damageMultiplier>
+        <doorDamageMultiplier>2</doorDamageMultiplier>
+        <skills>
+            <repair req="14"/>
+        </skills>
+        <powerEffect>
+			<cooldown>20</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>saltSizzle</powerSound>
+			</powerSounds>
+			<buttonText>MINE</buttonText>
+			<tooltip>[COOLDOWN:20s  DURATION:15s]
+				Continuously deals damage to nearby enemy rock and crystal crew. Enemies will lose 5hp/s.</tooltip>
+			<cooldownColor r="225" g="220" b="94"/>
+			<temporaryEffect>
+				<duration>15</duration>
+				<cooldownColor r="155" g="150" b="24"/>
+				<animSheet>sj_dwarf_power</animSheet>
+				<statBoosts>
+					<statBoost name="trueHealAmount">
+						<boostType>FLAT</boostType>
+						<amount>-5</amount>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ENEMIES</crewTarget>
+						<affectsSelf>false</affectsSelf>
+						<priority>0</priority>
+						<boostAnim>salt_particles</boostAnim>
+						<whiteList>
+                            <blueprintList load="LIST_CREW_ROCK"/>
+                            <blueprintList load="LIST_CREW_CRYSTAL"/>
+                        </whiteList>
+					</statBoost>
+				</statBoosts>
+			</temporaryEffect>
+		</powerEffect>
+        <animBase>human</animBase>
+        <animSheet>sj_dwarf</animSheet>
+        <deathSounds>
+            <deathSound>death1</deathSound>
+            <deathSound>death2</deathSound>
+        </deathSounds>
+    </mod-append:race>
+</mod:findLike>
+
+<mod:findLike type="crew" limit="1">
+    <mod-append:race name="sj_elf">
+        <visiontype>darkvision</visiontype>
+        <moveSpeedMultiplier>1.16</moveSpeedMultiplier>
+        <damageMultiplier>0.9</damageMultiplier>
+        <rangedDamageMultiplier>1.2</rangedDamageMultiplier>
+        <skills>
+			<piloting req="13.5"/>
+			<engines req="13.5"/>
+			<shields req="49.5"/>
+			<weapons req="58.5"/>
+			<repair req="16.2"/>
+			<combat req="7.2"/>
+		</skills>
+        <animBase>human</animBase>
+        <animSheet>sj_elf</animSheet>
+        <deathSounds>
+            <deathSound>death1</deathSound>
+            <deathSound>death2</deathSound>
+        </deathSounds>
+    </mod-append:race>
+</mod:findLike>
+<!-- 
+**********************************************************************************************************************
+                                        MISCELLANEOUS HYPERSPACE
+**********************************************************************************************************************
+-->
+
+<mod:findLike type="titleScreen" limit="1">
+    <mod:findLike type="splashImages">
+        <mod-append:splashImage x="640" y="360" center="true">sj_main_base2_hyperspace</mod-append:splashImage>
+    </mod:findLike>
+</mod:findLike>
+
+<mod:findLike type="scripts">
+    <mod-append:script>data/ftlljammer_scripts/jettisons.lua</mod-append:script>
+    <mod-append:script>data/ftlljammer_scripts/augments.lua</mod-append:script>
+    <mod-append:script>data/ftlljammer_scripts/beams.lua</mod-append:script>
+</mod:findLike>

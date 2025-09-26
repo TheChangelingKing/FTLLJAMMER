@@ -1,0 +1,1924 @@
+<!-- 
+**********************************************************************************************************************
+                                        TABLE OF CONTENTS
+1. WEAPONS BLUEPRINTS, Line 19
+	1a. ARTILLERY BLUEPRINTS, Line 25
+	1b. CANNONS BLUEPRINTS, Line 206
+	1c. BALLISTAS BLUEPRINTS, Line 486
+	1d. CATAPULTS BLUEPRINTS, Line 735
+	1e. JETTISONS BLUEPRINTS, Line 1079
+	1f. PROJECTORS BLUEPRINTS, Line 1495
+2. AUGMENTS BLUEPRINTS, Line 1530
+3. SHIPS BLUEPRINTS, Line 1563
+4. CREW BLUEPRINTS, Line 1796
+**********************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                        WEAPONS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                        ARTILLERY BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<weaponBlueprint name="SJ_ARTILLERY_GREAT_BOMBARD">
+	<type>BURST</type>
+	<title>Great Bombard Artillery</title>
+	<short>Artillery</short>
+	<desc>[Base cooldown: 60] Fires one massive cannonball that creates an equally massive hole in the enemy.</desc>
+	<tooltip>Artillery; 2d4+1 damage, Fires one massive cannonball that creates an equally massive hole in the enemy.</tooltip>
+	<drone_targetable>0</drone_targetable>
+	<accuracyMod>100</accuracyMod>
+	<radius>45</radius>
+	<spin>720</spin>
+	<sysDamage>12</sysDamage>
+	<speed>50</speed>
+	<hullBust>1</hullBust>
+	<shots>1</shots>
+	<sp>10</sp>
+	<stun>6</stun>
+	<fireChance>0</fireChance>
+	<breachChance>10</breachChance>
+	<cooldown>60</cooldown>
+	<power>1</power>
+	<cost>0</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_artillery_cannon_list">sj_artillery_cannonball</projectile>
+</projectiles>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>artillery_cannon</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>explosion_heavy</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_artillery_cannon_list"> 
+    <name>sj_artillery_cannonball1</name>
+    <name>sj_artillery_cannonball2</name>
+	<name>sj_artillery_cannonball2</name>
+	<name>sj_artillery_cannonball3</name>
+	<name>sj_artillery_cannonball3</name>
+	<name>sj_artillery_cannonball3</name>
+	<name>sj_artillery_cannonball4</name>
+	<name>sj_artillery_cannonball4</name>
+	<name>sj_artillery_cannonball4</name>
+	<name>sj_artillery_cannonball4</name>
+	<name>sj_artillery_cannonball5</name>
+	<name>sj_artillery_cannonball5</name>
+	<name>sj_artillery_cannonball5</name>
+	<name>sj_artillery_cannonball6</name>
+	<name>sj_artillery_cannonball6</name>
+	<name>sj_artillery_cannonball7</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_artillery_cannonball1">
+    <type>LASER</type>
+    <title>Artillery Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A massive cannonball that deals 2d4+1 damage</desc>
+    <damage>3</damage>
+	<sp>10</sp>
+	<sysDamage>12</sysDamage>
+	<stun>6</stun>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>50</speed>
+	<breachChance>10</breachChance>
+    <image>sj_artillery_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_artillery_cannonball2">
+    <type>LASER</type>
+    <title>Artillery Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A massive cannonball that deals 2d4+1 damage</desc>
+    <damage>4</damage>
+	<sp>10</sp>
+	<sysDamage>12</sysDamage>
+	<stun>6</stun>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>50</speed>
+	<breachChance>10</breachChance>
+    <image>sj_artillery_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_artillery_cannonball3">
+    <type>LASER</type>
+    <title>Artillery Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A massive cannonball that deals 2d4+1 damage</desc>
+    <damage>5</damage>
+	<sp>10</sp>
+	<sysDamage>12</sysDamage>
+	<stun>6</stun>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>50</speed>
+	<breachChance>10</breachChance>
+    <image>sj_artillery_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_artillery_cannonball4">
+    <type>LASER</type>
+    <title>Artillery Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A massive cannonball that deals 2d4+1 damage</desc>
+    <damage>6</damage>
+	<sp>10</sp>
+	<sysDamage>12</sysDamage>
+	<stun>6</stun>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>50</speed>
+	<breachChance>10</breachChance>
+    <image>sj_artillery_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_artillery_cannonball5">
+    <type>LASER</type>
+    <title>Artillery Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A massive cannonball that deals 2d4+1 damage</desc>
+    <damage>7</damage>
+	<sp>10</sp>
+	<sysDamage>12</sysDamage>
+	<stun>6</stun>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>50</speed>
+	<breachChance>10</breachChance>
+    <image>sj_artillery_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_artillery_cannonball6">
+    <type>LASER</type>
+    <title>Artillery Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A massive cannonball that deals 2d4+1 damage</desc>
+    <damage>8</damage>
+	<sp>10</sp>
+	<sysDamage>12</sysDamage>
+	<stun>6</stun>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>50</speed>
+	<breachChance>10</breachChance>
+    <image>sj_artillery_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_artillery_cannonball7">
+    <type>LASER</type>
+    <title>Artillery Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A massive cannonball that deals 2d4+1 damage</desc>
+    <damage>9</damage>
+	<sp>10</sp>
+	<sysDamage>12</sysDamage>
+	<stun>6</stun>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>50</speed>
+	<breachChance>10</breachChance>
+    <image>sj_artillery_cannonball</image>
+</weaponBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                        CANNONS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<weaponBlueprint name="SJ_LARGE_CANNON">
+    <type>BURST</type>
+    <drone_targetable>0</drone_targetable>
+    <flavorType>Cannon</flavorType>
+    <title>Large Cannon</title>
+    <short>L. Cannon</short>
+    <tip>tip_cannons</tip>
+    <desc>Second in size only to the bombards of the Giff, this cannon is a certified ship killer. Large Cannon; 1d4+1 damage, 1 shot. 30 second cooldown. Pierces 4 shield layers. Guaranteed hull breach. Consumes 1 missile.</desc>
+    <tooltip>Large Cannon; 1d4+1 damage, 1 shot. 30 second cooldown. Pierces 4 shield layers. Guaranteed hull breach. Consumes 1 missile.</tooltip>
+	<radius>45</radius>
+	<spin>720</spin>
+    <missiles>1</missiles>
+    <speed>62.5</speed>
+    <hullBust>1</hullBust>
+    <shots>1</shots>
+    <sp>4</sp>
+    <fireChance>0</fireChance>
+    <breachChance>10</breachChance>
+    <cooldown>30</cooldown>
+    <power>4</power>
+    <cost>120</cost>
+    <bp>2</bp>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_large_cannon_list">sj_large_cannonball</projectile>
+</projectiles>
+    <rarity>4</rarity>
+    <launchSounds>
+        <sound>large_cannon</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull1</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>sj_large_cannon</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_large_cannon_list"> 
+    <name>sj_large_cannonball1</name>
+    <name>sj_large_cannonball2</name>
+	<name>sj_large_cannonball3</name>
+	<name>sj_large_cannonball4</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_large_cannonball1">
+    <type>MISSILE</type>
+    <title>Large Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A large cannonball that deals 1d4+1 damage</desc>
+    <damage>2</damage>
+	<sp>4</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_large_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_cannonball2">
+    <type>MISSILE</type>
+    <title>Large Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A large cannonball that deals 1d4+1 damage</desc>
+    <damage>3</damage>
+	<sp>4</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_large_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_cannonball3">
+    <type>MISSILE</type>
+    <title>Large Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A large cannonball that deals 1d4+1 damage</desc>
+    <damage>4</damage>
+	<sp>4</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_large_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_cannonball4">
+    <type>MISSILE</type>
+    <title>Large Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A large cannonball that deals 1d4+1 damage</desc>
+    <damage>5</damage>
+	<sp>4</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_large_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="SJ_MEDIUM_CANNON">
+    <type>BURST</type>
+    <drone_targetable>0</drone_targetable>
+    <flavorType>Cannon</flavorType>
+    <title>Medium Cannon</title>
+    <short>M. Cannon</short>
+    <tip>tip_cannons</tip>
+    <desc>Your standard cannon with a standard-sized barrel. Rips through enemy hulls with ease. Medium Cannon; 1d3+1 damage, 1 shot. 24 second cooldown. Pierces 3 shield layers. Guaranteed hull breach. Consumes 1 missile.</desc>
+    <tooltip>Medium Cannon; 1d3+1 damage, 1 shot. 24 second cooldown. Pierces 3 shield layers. Guaranteed hull breach. Consumes 1 missile.</tooltip>
+    <radius>45</radius>
+	<spin>720</spin>
+    <missiles>1</missiles>
+    <speed>62.5</speed>
+    <hullBust>1</hullBust>
+    <shots>1</shots>
+    <sp>3</sp>
+    <fireChance>0</fireChance>
+    <breachChance>10</breachChance>
+    <cooldown>24</cooldown>
+    <power>3</power>
+    <cost>90</cost>
+    <bp>2</bp>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_medium_cannon_list">sj_medium_cannonball</projectile>
+</projectiles>
+    <rarity>3</rarity>
+    <launchSounds>
+        <sound>medium_cannon</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull1</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>sj_medium_cannon</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_medium_cannon_list"> 
+    <name>sj_medium_cannonball1</name>
+    <name>sj_medium_cannonball2</name>
+	<name>sj_medium_cannonball3</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_medium_cannonball1">
+    <type>MISSILE</type>
+    <title>Medium Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A medium cannonball that deals 1d3+1 damage</desc>
+    <damage>2</damage>
+	<sp>3</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_small_cannonball</image>
+    <image>sj_medium_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_cannonball2">
+    <type>MISSILE</type>
+    <title>Medium Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A medium cannonball that deals 1d3+1 damage</desc>
+    <damage>3</damage>
+	<sp>3</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_medium_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_cannonball3">
+    <type>MISSILE</type>
+    <title>Medium Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A medium cannonball that deals 1d3+1 damage</desc>
+    <damage>4</damage>
+	<sp>3</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_medium_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="SJ_SMALL_CANNON">
+    <type>BURST</type>
+    <drone_targetable>0</drone_targetable>
+    <flavorType>Cannon</flavorType>
+    <title>Small Cannon</title>
+    <short>S. Cannon</short>
+    <tip>tip_cannons</tip>
+    <desc>A typical cannon with a short, thick barrel cast from bronze or iron and mounted on a rigid wooden base. Small Cannon; 1d2+1 damage, 1 shot. 18 second cooldown. Pierces 2 shield layers. Guaranteed hull breach. Consumes 1 missile.</desc>
+    <tooltip>Small Cannon; 1d2+1 damage, 1 shot. 18 second cooldown. Pierces 2 shield layers. Guaranteed hull breach. Consumes 1 missile.</tooltip>
+    <radius>45</radius>
+	<spin>720</spin>
+    <missiles>1</missiles>
+    <speed>62.5</speed>
+    <hullBust>1</hullBust>
+    <shots>1</shots>
+    <sp>2</sp>
+    <fireChance>0</fireChance>
+    <breachChance>10</breachChance>
+    <cooldown>18</cooldown>
+    <power>2</power>
+    <cost>60</cost>
+    <bp>2</bp>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_small_cannon_list">sj_small_cannonball</projectile>
+</projectiles>
+    <rarity>2</rarity>
+    <launchSounds>
+        <sound>small_cannon</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull1</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>sj_small_cannon</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_small_cannon_list"> 
+    <name>sj_small_cannonball1</name>
+    <name>sj_small_cannonball2</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_small_cannonball1">
+    <type>MISSILE</type>
+    <title>Small Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A small cannonball that deals 1d2+1 damage</desc>
+    <damage>2</damage>
+	<sp>2</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_small_cannonball</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_small_cannonball2">
+    <type>MISSILE</type>
+    <title>Small Cannonball</title>
+    <short>Cannonball</short>
+    <desc>A small cannonball that deals 1d2+1 damage</desc>
+    <damage>3</damage>
+	<sp>2</sp>
+	<hullBust>1</hullBust>
+	<spin>720</spin>
+	<speed>62.5</speed>
+	<breachChance>10</breachChance>
+    <image>sj_small_cannonball</image>
+</weaponBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                        BALLISTAS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<weaponBlueprint name="SJ_SMALL_BALLISTA">
+	<type>BURST</type>
+	<flavorType>Ballista</flavorType>
+	<title>Small Ballista</title>
+	<short>S. Ballista</short>
+	<tip>tip_ballistae</tip>
+	<desc>A light ballista designed more for firing on enemy crew than dealing damage to ships. Ballista; 1d2 damage, 1 shot. 6 second cooldown. Pierces 1 shield layer. 10% chance to consume 1 ammo.</desc>
+	<tooltip>Ballista; 1d2 damage, 1 shot. 6 second cooldown. Pierces 1 shield layer. 10% chance to consume 1 ammo.</tooltip>
+	<radius>45</radius>
+	<persDamage>1</persDamage>
+	<missiles>1</missiles>
+	<freeMissileChance>90</freeMissileChance>
+	<shots>1</shots>
+	<sp>1</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>1</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_small_ballista_list">sj_small_bolt</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>ballista1</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_small_ballista</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_small_ballista_list"> 
+    <name>sj_small_bolt1</name>
+    <name>sj_small_bolt2</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_small_bolt1">
+    <type>MISSILE</type>
+    <title>Small Bolt</title>
+    <short>Bolt</short>
+    <desc>A small bolt that deals 1d2 damage</desc>
+    <damage>1</damage>
+	<persDamage>1</persDamage>
+	<sp>1</sp>
+	<breachChance>2</breachChance>
+    <image>sj_small_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_small_bolt2">
+    <type>MISSILE</type>
+    <title>Small Bolt</title>
+    <short>Bolt</short>
+    <desc>A small bolt that deals 1d2 damage</desc>
+    <damage>2</damage>
+	<persDamage>1</persDamage>
+	<sp>1</sp>
+	<breachChance>2</breachChance>
+    <image>sj_small_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="SJ_MEDIUM_BALLISTA">
+	<type>BURST</type>
+	<flavorType>Ballista</flavorType>
+	<title>Medium Ballista</title>
+	<short>M. Ballista</short>
+	<tip>tip_ballistae</tip>
+	<desc>A standard ballista that launches bolts at enemy ships. Ballista; 1d3 damage, 1 shot. 12 second cooldown. Pierces 2 shield layers. 20% chance to consume 1 ammo.</desc>
+	<tooltip>Ballista; 1d3 damage, 1 shot. 12 second cooldown. Pierces 2 shield layers. 20% chance to consume 1 ammo.</tooltip>
+	<radius>45</radius>
+	<missiles>1</missiles>
+	<freeMissileChance>80</freeMissileChance>
+	<shots>1</shots>
+	<sp>2</sp>
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>70</cost>
+	<bp>6</bp>
+	<rarity>2</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_medium_ballista_list">sj_medium_bolt</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>ballista2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_medium_ballista</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_medium_ballista_list"> 
+    <name>sj_medium_bolt1</name>
+    <name>sj_medium_bolt2</name>
+	<name>sj_medium_bolt3</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_medium_bolt1">
+    <type>MISSILE</type>
+    <title>Medium Bolt</title>
+    <short>Bolt</short>
+    <desc>A medium bolt that deals 1d3 damage</desc>
+    <damage>1</damage>
+	<sp>2</sp>
+	<breachChance>3</breachChance>
+    <image>sj_medium_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_bolt2">
+    <type>MISSILE</type>
+    <title>Medium Bolt</title>
+    <short>Bolt</short>
+    <desc>A medium bolt that deals 1d3 damage</desc>
+    <damage>2</damage>
+	<sp>2</sp>
+	<breachChance>3</breachChance>
+    <image>sj_medium_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_bolt3">
+    <type>MISSILE</type>
+    <title>Medium Bolt</title>
+    <short>Bolt</short>
+    <desc>A medium bolt that deals 1d3 damage</desc>
+    <damage>3</damage>
+	<sp>2</sp>
+	<breachChance>3</breachChance>
+    <image>sj_medium_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="SJ_LARGE_BALLISTA">
+	<type>BURST</type>
+	<flavorType>Ballista</flavorType>
+	<title>Large Ballista</title>
+	<short>L. Ballista</short>
+	<tip>tip_ballistae</tip>
+	<desc>A heavy ballista capable of dealing significant damage to enemy vessels. Ballista; 1d4 damage, 1 shot. 18 second cooldown. Pierces 3 shield layers. 30% chance to consume 1 ammo.</desc>
+	<tooltip>Ballista; 1d4 damage, 1 shot. 18 second cooldown. Pierces 3 shield layers. 30% chance to consume 1 ammo.</tooltip>
+	<radius>45</radius>
+	<missiles>1</missiles>
+	<freeMissileChance>70</freeMissileChance>
+	<shots>1</shots>
+	<sp>3</sp>
+	<fireChance>0</fireChance>
+	<breachChance>4</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>18</cooldown>
+	<power>3</power>
+	<cost>90</cost>
+	<bp>6</bp>
+	<rarity>3</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_large_ballista_list">sj_large_bolt</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>ballista2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_large_ballista</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_large_ballista_list"> 
+    <name>sj_large_bolt1</name>
+    <name>sj_large_bolt2</name>
+	<name>sj_large_bolt3</name>
+	<name>sj_large_bolt4</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_large_bolt1">
+    <type>MISSILE</type>
+    <title>Large Bolt</title>
+    <short>Bolt</short>
+    <desc>A large bolt that deals 1d4 damage</desc>
+    <damage>1</damage>
+	<sp>3</sp>
+	<breachChance>4</breachChance>
+    <image>sj_large_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_bolt2">
+    <type>MISSILE</type>
+    <title>Large Bolt</title>
+    <short>Bolt</short>
+    <desc>A large bolt that deals 1d4 damage</desc>
+    <damage>2</damage>
+	<sp>3</sp>
+	<breachChance>4</breachChance>
+    <image>sj_large_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_bolt3">
+    <type>MISSILE</type>
+    <title>Large Bolt</title>
+    <short>Bolt</short>
+    <desc>A large bolt that deals 1d4 damage</desc>
+    <damage>3</damage>
+	<sp>3</sp>
+	<breachChance>4</breachChance>
+    <image>sj_large_bolt</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_bolt4">
+    <type>MISSILE</type>
+    <title>Large Bolt</title>
+    <short>Bolt</short>
+    <desc>A large bolt that deals 1d4 damage</desc>
+    <damage>4</damage>
+	<sp>3</sp>
+	<breachChance>4</breachChance>
+    <image>sj_large_bolt</image>
+</weaponBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                        CATAPULTS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<weaponBlueprint name="SJ_SMALL_CATAPULT">
+	<type>BURST</type>
+	<flavorType>Catapult</flavorType>
+	<title>Small Catapult</title>
+	<short>S. Catapult</short>
+	<tip>tip_catapults</tip>
+	<desc>A light catapult which acts as a simple siege weapon. Not much of a threat on its own. Innaccurate, but hard hitting. Catapult; 2d2-1 damage, 1 shot. 6 second cooldown. Pops 1 additional shield layer.</desc>
+	<tooltip>Catapult; 2d2-1 damage, 1 shot. 6 second cooldown. Pops 1 additional shield layer.</tooltip>
+	<radius>65</radius>
+	<shots>1</shots>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>6</bp>
+	<rarity>1</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_small_catapult_list">sj_small_stone</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>small_catapult</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_small_catapult</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_small_catapult_list"> 
+    <name>sj_small_catapult1</name>
+    <name>sj_small_catapult2</name>
+	<name>sj_small_catapult2</name>
+	<name>sj_small_catapult3</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_small_catapult1">
+    <type>MISSILE</type>
+    <title>Small Stone</title>
+    <short>Stone</short>
+    <desc>A small stone that deals 2d2-1 damage</desc>
+    <damage>1</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>3</breachChance>
+    <image>sj_small_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_small_catapult2">
+    <type>MISSILE</type>
+    <title>Small Stone</title>
+    <short>Stone</short>
+    <desc>A small stone that deals 2d2-1 damage</desc>
+    <damage>2</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>3</breachChance>
+    <image>sj_small_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_small_catapult3">
+    <type>MISSILE</type>
+    <title>Small Stone</title>
+    <short>Stone</short>
+    <desc>A small stone that deals 2d2-1 damage</desc>
+    <damage>3</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>3</breachChance>
+    <image>sj_small_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="SJ_MEDIUM_CATAPULT">
+	<type>BURST</type>
+	<flavorType>Catapult</flavorType>
+	<title>Medium Catapult</title>
+	<short>M. Catapult</short>
+	<tip>tip_catapults</tip>
+	<desc>A medium catapult is your standard siege weapon. Innaccurate, but hard hitting. Catapult; 3d2-1 damage, 1 shot. 12 second cooldown. Pops 1 additional shield layer.</desc>
+	<tooltip>Catapult; 3d2-1 damage, 1 shot. 12 second cooldown. Pops 1 additional shield layer.</tooltip>
+	<radius>65</radius>
+	<shots>1</shots>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<fireChance>0</fireChance>
+	<breachChance>4</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>12</cooldown>
+	<power>3</power>
+	<cost>80</cost>
+	<bp>6</bp>
+	<rarity>2</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_medium_catapult_list">sj_medium_stone</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>medium_catapult</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_medium_catapult</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_medium_catapult_list"> 
+    <name>sj_medium_catapult1</name>
+    <name>sj_medium_catapult2</name>
+	<name>sj_medium_catapult2</name>
+	<name>sj_medium_catapult3</name>
+	<name>sj_medium_catapult3</name>
+	<name>sj_medium_catapult4</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_medium_catapult1">
+    <type>MISSILE</type>
+    <title>Medium Stone</title>
+    <short>Stone</short>
+    <desc>A medium stone that deals 3d2-1 damage</desc>
+    <damage>2</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>4</breachChance>
+    <image>sj_medium_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_catapult2">
+    <type>MISSILE</type>
+    <title>Medium Stone</title>
+    <short>Stone</short>
+    <desc>A medium stone that deals 3d2-1 damage</desc>
+    <damage>3</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>4</breachChance>
+    <image>sj_medium_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_catapult3">
+    <type>MISSILE</type>
+    <title>Medium Stone</title>
+    <short>Stone</short>
+    <desc>A medium stone that deals 3d2-1 damage</desc>
+    <damage>4</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>4</breachChance>
+    <image>sj_medium_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_catapult4">
+    <type>MISSILE</type>
+    <title>Medium Stone</title>
+    <short>Stone</short>
+    <desc>A medium stone that deals 3d2-1 damage</desc>
+    <damage>5</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>4</breachChance>
+    <image>sj_medium_stone</image>
+</weaponBlueprint>
+
+
+<weaponBlueprint name="SJ_LARGE_CATAPULT">
+	<type>BURST</type>
+	<flavorType>Catapult</flavorType>
+	<title>Large Catapult</title>
+	<short>L. Catapult</short>
+	<tip>tip_catapults</tip>
+	<desc>A large catapult is a terrifying siege weapon capable of hurling massive stones at the enemy. Innaccurate, but hard hitting. Catapult; 4d2-2 damage, 1 shot. 18 second cooldown. Pops 1 additional shield layer.</desc>
+	<tooltip>Catapult; 4d2-2 damage, 1 shot. 18 second cooldown. Pops 1 additional shield layer.</tooltip>
+	<radius>65</radius>
+	<shots>1</shots>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>18</cooldown>
+	<power>4</power>
+	<cost>100</cost>
+	<bp>6</bp>
+	<rarity>3</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_large_catapult_list">sj_large_stone</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>large_catapult</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_large_catapult</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_large_catapult_list"> 
+    <name>sj_large_catapult1</name>
+    <name>sj_large_catapult2</name>
+	<name>sj_large_catapult2</name>
+	<name>sj_large_catapult3</name>
+	<name>sj_large_catapult3</name>
+	<name>sj_large_catapult3</name>
+	<name>sj_large_catapult4</name>
+	<name>sj_large_catapult4</name>
+	<name>sj_large_catapult5</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_large_catapult1">
+    <type>MISSILE</type>
+    <title>Large Stone</title>
+    <short>Stone</short>
+    <desc>A large stone that deals 4d2-2 damage</desc>
+    <damage>2</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>5</breachChance>
+    <image>sj_large_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_catapult2">
+    <type>MISSILE</type>
+    <title>Large Stone</title>
+    <short>Stone</short>
+    <desc>A large stone that deals 4d2-2 damage</desc>
+    <damage>3</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>5</breachChance>
+    <image>sj_large_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_catapult3">
+    <type>MISSILE</type>
+    <title>Large Stone</title>
+    <short>Stone</short>
+    <desc>A large stone that deals 4d2-2 damage</desc>
+    <damage>4</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>5</breachChance>
+    <image>sj_large_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_catapult4">
+    <type>MISSILE</type>
+    <title>Large Stone</title>
+    <short>Stone</short>
+    <desc>A large stone that deals 4d2-2 damage</desc>
+    <damage>5</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>5</breachChance>
+    <image>sj_large_stone</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_catapult5">
+    <type>MISSILE</type>
+    <title>Large Stone</title>
+    <short>Stone</short>
+    <desc>A large stone that deals 4d2-2 damage</desc>
+    <damage>6</damage>
+	<spin>720</spin>
+	<mv-pop>
+        <count>1</count>
+        <countSuper>1</countSuper>
+	</mv-pop>
+	<breachChance>5</breachChance>
+    <image>sj_large_stone</image>
+</weaponBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                        JETTISONS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<weaponBlueprint name="SJ_SMALL_JETTISON">
+	<type>BURST</type>
+	<flavorType>Jettison</flavorType>
+	<title>Small Jettison</title>
+	<short>S. Jettison</short>
+	<tip>tip_jettisons</tip>
+	<desc>A light jettison, similar to a catapult, but firing small spikes. Good for killing some crew. Jettison; 30 crew damage per shot, 1d4 shots. 6 second cooldown.</desc>
+	<tooltip>Jettison; 1d4 shots. 6 second cooldown. Kills crew well.</tooltip>
+	<radius>105</radius>
+	<shots>1</shots>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<cost>60</cost>
+	<bp>6</bp>
+	<rarity>1</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_small_jettison_list">sj_spikes_ammo</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>small_catapult</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_small_jettison</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_small_jettison_list"> 
+    <name>sj_small_jettison1</name>
+    <name>sj_small_jettison2</name>
+	<name>sj_small_jettison3</name>
+	<name>sj_small_jettison4</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_small_jettison1">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals crew damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>1</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_small_jettison2">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals crew damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>2</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_small_jettison3">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals crew damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>3</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_small_jettison4">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals crew damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>4</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="SJ_MEDIUM_JETTISON">
+	<type>BURST</type>
+	<flavorType>Jettison</flavorType>
+	<title>Medium Jettison</title>
+	<short>M. Jettison</short>
+	<tip>tip_jettisons</tip>
+	<desc>A medium jettison, similar to a catapult, but firing small spikes. Good for killing crew. Jettison; 30 crew damage per shot, 2d4 shots. 12 second cooldown.</desc>
+	<tooltip>Jettison; 2d4 shots. 12 second cooldown. Kills crew well.</tooltip>
+	<radius>105</radius>
+	<shots>1</shots>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>6</bp>
+	<rarity>2</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_medium_jettison_list">sj_spikes_ammo</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>medium_catapult</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_medium_jettison</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_medium_jettison_list"> 
+    <name>sj_medium_jettison1</name>
+    <name>sj_medium_jettison2</name>
+	<name>sj_medium_jettison2</name>
+	<name>sj_medium_jettison3</name>
+	<name>sj_medium_jettison3</name>
+	<name>sj_medium_jettison3</name>
+	<name>sj_medium_jettison4</name>
+	<name>sj_medium_jettison4</name>
+	<name>sj_medium_jettison4</name>
+	<name>sj_medium_jettison4</name>
+	<name>sj_medium_jettison5</name>
+	<name>sj_medium_jettison5</name>
+	<name>sj_medium_jettison5</name>
+	<name>sj_medium_jettison6</name>
+	<name>sj_medium_jettison6</name>
+	<name>sj_medium_jettison7</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_medium_jettison1">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>2</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_jettison2">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>3</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_jettison3">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>4</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_jettison4">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>5</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_jettison5">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>6</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_jettison6">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>7</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_medium_jettison7">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>8</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="SJ_LARGE_JETTISON">
+	<type>BURST</type>
+	<flavorType>Jettison</flavorType>
+	<title>Large Jettison</title>
+	<short>L. Jettison</short>
+	<tip>tip_jettisons</tip>
+	<desc>A large jettison, similar to a catapult, but firing small spikes. Good for killing multiple crew. Jettison; 30 crew damage per shot, 3d4 shots. 18 second cooldown.</desc>
+	<tooltip>Jettison; 3d4 shots. 18 second cooldown. Kills crew well.</tooltip>
+	<radius>105</radius>
+	<shots>1</shots>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>18</cooldown>
+	<power>3</power>
+	<cost>60</cost>
+	<bp>6</bp>
+	<rarity>3</rarity>
+<projectiles>
+        <projectile count="1" fake="false" blueprint="sj_large_jettison_list">sj_spikes_ammo</projectile>
+</projectiles>
+	<launchSounds>
+		<sound>large_catapult</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>sj_large_jettison</weaponArt>
+</weaponBlueprint>
+
+<blueprintList name="sj_large_jettison_list"> 
+    <name>sj_large_jettison1</name>
+	<name>sj_large_jettison2</name>
+	<name>sj_large_jettison2</name>
+	<name>sj_large_jettison3</name>
+	<name>sj_large_jettison3</name>
+	<name>sj_large_jettison3</name>
+	<name>sj_large_jettison4</name>
+	<name>sj_large_jettison4</name>
+	<name>sj_large_jettison4</name>
+	<name>sj_large_jettison4</name>
+	<name>sj_large_jettison5</name>
+	<name>sj_large_jettison5</name>
+	<name>sj_large_jettison5</name>
+	<name>sj_large_jettison5</name>
+	<name>sj_large_jettison5</name>
+	<name>sj_large_jettison6</name>
+	<name>sj_large_jettison6</name>
+	<name>sj_large_jettison6</name>
+	<name>sj_large_jettison6</name>
+	<name>sj_large_jettison6</name>
+	<name>sj_large_jettison7</name>
+	<name>sj_large_jettison7</name>
+	<name>sj_large_jettison7</name>
+	<name>sj_large_jettison7</name>
+	<name>sj_large_jettison8</name>
+	<name>sj_large_jettison8</name>
+	<name>sj_large_jettison8</name>
+	<name>sj_large_jettison9</name>
+	<name>sj_large_jettison9</name>
+	<name>sj_large_jettison10</name>
+</blueprintList>
+
+<weaponBlueprint name="sj_large_jettison1">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>3</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison2">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>4</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison3">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>5</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison4">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>6</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison5">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>7</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison6">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>8</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison7">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>9</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison8">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>10</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison9">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>11</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<weaponBlueprint name="sj_large_jettison10">
+    <type>MISSILE</type>
+    <title>Spikes</title>
+    <short>Spikes</short>
+    <desc>A small spike that deals 1 damage</desc>
+	<persDamage>2</persDamage>
+	<spin>720</spin>
+	<shots>12</shots>
+    <image>sj_spikes_ammo</image>
+</weaponBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                        PROJECTORS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<weaponBlueprint name="SJ_FLAME_PROJECTOR">
+	<type>BEAM</type>
+	<tip>tip_projectors</tip>
+	<title>Alchemist's Fire Projector</title>
+	<short>AFP</short>
+	<desc>This projector shoots a long flame which burns crew and sets fires.</desc>
+	<tooltip>Projector; Crew damage. 12 second cooldown. Starts fires, can stun crew by catching them on fire.</tooltip>
+	<damage>0</damage>
+	<persDamage>1</persDamage>
+	<stun>2</stun>
+	<sp>0</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>6</cooldown>
+	<speed>1</speed>
+	<power>2</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>2</rarity>
+	<length>35</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>flame_projector</sound>
+	</launchSounds>
+	<weaponArt>sj_flame_projector</weaponArt>
+	<iconImage>sj_flame_projector_beam</iconImage>
+</weaponBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                        AUGMENTS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<augBlueprint name="SJ_SHIP_RAM">
+    <title>Ship Ram</title>
+    <desc>Allows you to ram an enemy ship at the beginning of every combat, dealing decent damage to a random enemy system, though at a slight cost to your own hull.</desc>
+    <cost>45</cost>
+    <rarity>2</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="SJ_SMALLJAMMER_TIMIDNESS">
+    <title>Timid</title>
+    <desc>The Smalljammer refuses to handle large weapons.</desc>
+    <cost>0</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="SJ_CITADEL_ARMOR">
+	<title>Armored Citadel</title>
+	<desc>The thick rock this ship is carved from provides a 50% chance to negate incoming hull damage (hit systems will still be damaged).</desc>
+	<cost>120</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+</FTL>
+
+<augBlueprint name="SJ_ELVEN_IMPERIAL_NAVY">
+	<title>Elven Imperial Navy</title>
+	<desc>This ship is part of the Elven Imperial Navy. Elven ships specialize in speed over defense, and because of this, they have 10 fewer hull points but gain a 10% bonus to evasion.</desc>
+	<cost>100</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+</FTL>
+
+<!-- 
+**********************************************************************************************************************
+                                        SHIPS BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<shipBlueprint name="SJ_BOMBARD_A" layout="sj_bombard_a" img="sj_bombard_a">
+	<class>Great Bombard</class>
+	<name>Krakatoa</name>
+	<desc>One of the few ships designed for the giff, the Great Bombard resembles a single-decked groundling bireme, and indeed such a craft actually served as the frame for the first of these ships.</desc>
+	<systemList>
+		<artillery power="2" room="15" start="true" weapon="SJ_ARTILLERY_GREAT_BOMBARD" img="sj_room_artillery_4a" />
+		<battery power="1" room="17" start="false" img="sj_room_battery_3" />
+		<cloaking power="1" room="8" start="false" img="sj_room_cloaking_2" />
+		<clonebay power="1" room="10" start="true">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="14" start="true" img="sj_room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="1" start="false" img="sj_room_drones_2.2" />
+		<engines power="2" room="11" start="true" img="sj_room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="3" start="false" img="sj_room_hacking_2" />
+		<medbay power="1" room="10" start="true" img="sj_room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="12" start="false" img="sj_room_mindcontrol_2" />
+		<oxygen power="1" room="18" start="true" img="sj_room_oxygen_3" />
+		<pilot power="1" room="0" start="true" img="sj_room_piloting_4">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="13" start="true" img="sj_room_sensors_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="2" start="true" img="sj_room_shields_2">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="9" start="false" />
+		<weapons power="2" room="5" start="true" img="sj_room_weapons_4">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="SJ_SMALL_CANNON" />
+	</weaponList>
+	<droneList drones="2" count="0" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="sj_giff" />
+	<crewCount amount="1" class="sj_giff" />
+	<crewCount amount="1" class="sj_giff" />
+	<aug name="SJ_SHIP_RAM" />
+	<shieldImage>sj_bombard_a</shieldImage>
+	<mv-mapImage>map_icon_sj_bombard</mv-mapImage>
+</shipBlueprint>
+
+<shipBlueprint name="SJ_SMALLJAMMER_A" layout="sj_smalljammer_a" img="sj_smalljammer_a">
+	<class>Smalljammer</class>
+	<name>Mobulidae</name>
+	<desc>A living ship and technical child of The Legendary Spelljammer, Smalljammers are typically timid creatures, but once they bond to a pilot they become fiercely loyal. Though, due to their timid nature, they don't like larger weapons and don't like having many crew aboard them.</desc>
+	<systemList>
+		<battery power="1" room="6" start="false" img="sj_room_battery_2" />
+		<cloaking power="1" room="3" start="true" img="sj_room_cloaking_2a" />
+		<clonebay power="1" room="2" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="12" start="true" img="sj_room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="10" start="false" img="sj_room_drones_2.a" />
+		<engines power="2" room="7" start="true" img="sj_room_engines_1">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="false" img="sj_room_hacking_2a" />
+		<medbay power="1" room="2" start="true" img="sj_room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="4" start="false" img="sj_room_mindcontrol_2a" />
+		<oxygen power="1" room="5" start="true" img="sj_room_oxygen_2a" />
+		<pilot power="1" room="8" start="true" img="sj_room_piloting_1">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="13" start="true" img="sj_room_sensors_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="1" start="true" img="sj_room_shields_2a">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="11" start="false" />
+		<weapons power="2" room="0" start="true" img="sj_room_weapons_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="5" count="4">
+		<weapon name="SJ_SMALL_BALLISTA" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human_medic" />
+	<crewCount amount="1" class="human_soldier" />
+	<crewCount amount="1" class="human_engineer" />
+	<shieldImage>sj_smalljammer_a</shieldImage>
+	<mv-mapImage>map_icon_sj_smalljammer</mv-mapImage>
+</shipBlueprint>
+
+<shipBlueprint name="SJ_CITADEL_A" layout="sj_citadel_a" img="sj_citadel_a">
+	<class>Dwarven Citadel</class>
+	<name>Golden Forge</name>
+	<desc>An asteroid that had been converted into a spelljamming vessel by dwarves. It is powered by a large forge. Citadels range in weight from 300 to 700 tons and sport thick rock armor from the asteroid they were carved from.</desc>
+	<systemList>
+		<battery power="1" room="16" start="false" img="sj_room_battery_1" />
+		<cloaking power="1" room="7" start="false" img="sj_room_cloaking_2a" />
+		<clonebay power="1" room="6" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="5" start="true" img="sj_room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="17" start="false" img="sj_room_drones_2.a" />
+		<engines power="2" room="0" start="true" img="sj_room_engines_3">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="13" start="false" img="sj_room_hacking_2b" />
+		<medbay power="1" room="6" start="true" img="sj_room_medbay_6">
+			<slot>
+				<number>4</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="3" start="false" img="sj_room_mindcontrol_2a" />
+		<oxygen power="1" room="1" start="true" img="sj_room_oxygen_6" />
+		<pilot power="1" room="9" start="true" img="sj_room_piloting_dwarf">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="12" start="true" img="sj_room_sensors_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="14" start="false" img="sj_room_shields_2a">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="11" start="true" />
+		<weapons power="2" room="15" start="true" img="sj_room_weapons_2b">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="3" count="4">
+		<weapon name="SJ_SMALL_BALLISTA" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="30" />
+	<maxPower amount="6" />
+	<crewCount amount="1" class="sj_dwarf" />
+	<crewCount amount="1" class="sj_dwarf" />
+	<crewCount amount="1" class="sj_dwarf" />
+	<crewCount amount="1" class="sj_dwarf" />
+	<aug name="SJ_CITADEL_ARMOR" />
+	<shieldImage>sj_citadel_a</shieldImage>
+	<mv-mapImage>map_icon_sj_citadel</mv-mapImage>
+</shipBlueprint>
+
+<shipBlueprint name="SJ_MAN'O'WAR_A" layout="sj_man'o'war_a" img="sj_man'o'war_a">
+	<class>Man'O'War</class>
+	<name>Queen of the Spheres</name>
+	<desc>This ship is completely devoid of any description whatsoever!</desc>
+	<systemList>
+		<battery power="1" room="8" start="false" img="sj_room_battery_2" />
+		<cloaking power="1" room="1" start="false" img="sj_room_cloaking_2" />
+		<clonebay power="1" room="4" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="0" start="true" img="sj_room_doors_1">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" room="10" start="false" img="sj_room_drones_2.2" />
+		<engines power="2" room="16" start="true" img="sj_room_engines_2a">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="7" start="false" img="sj_room_hacking_1" />
+		<medbay power="1" room="4" start="true" img="sj_room_medbay_3">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="6" start="false" img="sj_room_mindcontrol_1" />
+		<oxygen power="1" room="2" start="true" img="sj_room_oxygen_2a1" />
+		<pilot power="1" room="12" start="true" img="sj_room_piloting_1">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="15" start="true" img="sj_room_sensors_2a">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="13" start="true" img="sj_room_shields_2">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="5" start="false" />
+		<weapons power="2" room="14" start="true" img="sj_room_weapons_2a">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="2" count="0" />
+	<droneList drones="2" count="0" />
+	<health amount="20" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="sj_elf" />
+	<crewCount amount="1" class="sj_elf" />
+	<aug name="SJ_ELVEN_IMPERIAL_NAVY" />
+</shipBlueprint>
+
+<!-- 
+**********************************************************************************************************************
+                                        CREW BLUEPRINTS
+**********************************************************************************************************************
+-->
+
+<crewBlueprint name="sj_giff">
+	<desc>The giff are a race of humanoid-hippo mercenaries who hire on with various groups throughout the Known Spheres as bodyguards, enforcers, and general leg-breakers. They are also known to have a strong interest in gunpowder.</desc>
+	<title>Giff</title>
+	<short>Giff</short>
+	<cost>55</cost>
+	<bp>4</bp>
+	<rarity>2</rarity>
+	<powerList>
+		<power>Repair speed is quartered</power>
+		<power>Learn skills speed is halved</power>
+		<power>Max Health is increased to 170</power>
+		<power>1.8x combat damage</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="sj_dwarf">
+	<desc>The dwarves resemble slightly shorter, stockier humans with long beards. They are often found living underground or in hollowed out asteroids. Dwarves are often quick to try to negotiate or trade, but when battle calls, they aren't afraid to fight.</desc>
+	<title>Dwarf</title>
+	<short>Dwarf</short>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>1</rarity>
+	<powerList>
+		<power>Repair speed is 1.2x faster.</power>
+		<power>Learn repair skill faster.</power>
+		<power>Max Health is increased to 120</power>
+		<power>Move speed is x.83.</power>
+		<power>Destroy doors twice as fast.</power>
+		<power>Special ability to kill rock and crystal enemies faster.</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="sj_elf">
+	<desc>Elves are humanoids with pointed ears and fey ancestry. The elves of wildspace have collectively determined to form an empire between themselves and now every elf in wildspace belongs to said empire. The Elven Imperial Navy as such is a massive force, and the elves of it are not to be trifled with.</desc>
+	<title>Elf</title>
+	<short>Elf</short>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>1</rarity>
+	<powerList>
+		<power>Learn all skills slightly faster.</power>
+		<power>Move speed is x1.16.</power>
+		<power>1.2x ranged combat damage.</power>
+		<power>0.9x melee combat damage.</power>
+	</powerList>
+</crewBlueprint>

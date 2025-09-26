@@ -1,0 +1,19 @@
+<mod:findName type="event" name="COMBAT_CHECK_FAIL_REAL">
+      <mod-append:choice req="SJ_SHIP_RAM" blue="true" hidden="true">
+          <text>(Ship Ram) Ram the bastards!</text>
+        <event>
+            <damage amount="1"/>
+            <enemyDamage amount="4" system="random" effect="eff"/>             
+        </event>
+      </mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="COMBAT_CHECK_REAL">
+      <mod-append:choice req="SJ_SHIP_RAM" blue="true" hidden="true">
+          <text>(Ship Ram) Ram the bastards!</text>
+        <event>
+            <damage amount="1"/>
+            <enemyDamage amount="4" system="random" effect="eff"/>             
+        </event>
+      </mod-append:choice>
+</mod:findName>

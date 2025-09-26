@@ -1,0 +1,46 @@
+<!-- 
+**********************************************************************************************************************
+                                        TABLE OF CONTENTS
+1. 
+**********************************************************************************************************************
+-->
+
+<mod:findName type="sectorDescription" name="SECRET_ANCIENT">
+    <mod:findLike type="rarityList">
+    <mod-append:blueprint name="SJ_LARGE_CANNON" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_CANNON" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_CANNON" rarity="0" />
+    <mod-append:blueprint name="SJ_LARGE_BALLISTA" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_BALLISTA" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_BALLISTA" rarity="0" />
+    <mod-append:blueprint name="SJ_LARGE_CATAPULT" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_CATAPULT" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_CATAPULT" rarity="0" />
+    <mod-append:blueprint name="SJ_LARGE_JETTISON" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_JETTISON" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_JETTISON" rarity="0" />
+    <mod-append:blueprint name="SJ_FLAME_PROJECTOR" rarity="0" />
+    <mod-append:blueprint name="sj_giff" rarity="0" />
+    <mod-append:blueprint name="sj_dwarf" rarity="0" />
+    </mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="SECRET_ROYAL">
+    <mod:findLike type="rarityList">
+    <mod-append:blueprint name="SJ_LARGE_CANNON" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_CANNON" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_CANNON" rarity="0" />
+    <mod-append:blueprint name="SJ_LARGE_BALLISTA" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_BALLISTA" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_BALLISTA" rarity="0" />
+    <mod-append:blueprint name="SJ_LARGE_CATAPULT" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_CATAPULT" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_CATAPULT" rarity="0" />
+    <mod-append:blueprint name="SJ_LARGE_JETTISON" rarity="0" />
+    <mod-append:blueprint name="SJ_MEDIUM_JETTISON" rarity="0" />
+    <mod-append:blueprint name="SJ_SMALL_JETTISON" rarity="0" />
+    <mod-append:blueprint name="SJ_FLAME_PROJECTOR" rarity="0" />
+    <mod-append:blueprint name="sj_giff" rarity="0" />
+    <mod-append:blueprint name="sj_dwarf" rarity="0" />
+    </mod:findLike>
+</mod:findName>

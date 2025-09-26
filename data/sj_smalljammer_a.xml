@@ -1,0 +1,13 @@
+<img x="-79" y="-209" w="325" h="735" />
+<offsets>
+	<floor x="73" y="203" />
+	<cloak x="0" y="0" />
+</offsets>
+<weaponMounts>
+	<mount x="284" y="345" rotate="true" mirror="true" gib="-1" slide="right" />
+	<mount x="284" y="392" rotate="true" mirror="false" gib="-1" slide="right" />
+	<mount x="272" y="277" rotate="true" mirror="true" gib="-1" slide="right" />
+	<mount x="272" y="455" rotate="true" mirror="false" gib="-1" slide="right" />
+</weaponMounts>
+<explosion />
+

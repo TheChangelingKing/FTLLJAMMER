@@ -1,0 +1,750 @@
+<!-- 
+**********************************************************************************************************************
+                                        TABLE OF CONTENTS
+1. WEAPONS ANIMATIONS, Line 11
+2. CREW ANIMATIONS, Line 239
+**********************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                        WEAPONS ANIMATIONS
+**********************************************************************************************************************
+-->
+
+<animSheet name="sj_artillery_cannonball" w="30" h="30" fw="30" fh="30">projectiles/Artillery_Cannonball.png</animSheet>
+<anim name="sj_artillery_cannonball">
+    <sheet>sj_artillery_cannonball</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_large_cannon" w="696" h="284" fw="29" fh="284">weapon_cannon/Large_Cannon.png</animSheet>
+<weaponAnim name="sj_large_cannon">
+    <sheet>sj_large_cannon</sheet>
+    <desc length="24" x="0" y="0"/>
+    <chargedFrame>9</chargedFrame>
+    <fireFrame>10</fireFrame>
+    <firePoint x="15" y="168"/>
+    <mountPoint x="1" y="87"/>
+</weaponAnim>
+
+<animSheet name="sj_large_cannonball" w="21" h="21" fw="21" fh="21">projectiles/Large_Cannonball.png</animSheet>
+<anim name="sj_large_cannonball">
+    <sheet>sj_large_cannonball</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_medium_cannon" w="420" h="205" fw="20" fh="205">weapon_cannon/Medium_Cannon.png</animSheet>
+<weaponAnim name="sj_medium_cannon">
+    <sheet>sj_medium_cannon</sheet>
+    <desc length="21" x="0" y="0"/>
+    <chargedFrame>6</chargedFrame>
+    <fireFrame>7</fireFrame>
+    <firePoint x="11" y="131"/>
+    <mountPoint x="1" y="66"/>
+</weaponAnim>
+
+<animSheet name="sj_medium_cannonball" w="14" h="14" fw="14" fh="14">projectiles/Medium_Cannonball.png</animSheet>
+<anim name="sj_medium_cannonball">
+    <sheet>sj_medium_cannonball</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+
+<animSheet name="sj_small_cannon" w="520" h="147" fw="20" fh="147">weapon_cannon/Small_Cannon.png</animSheet>
+<weaponAnim name="sj_small_cannon">
+    <sheet>sj_small_cannon</sheet>
+    <desc length="26" x="0" y="0"/>
+    <chargedFrame>11</chargedFrame>
+    <fireFrame>12</fireFrame>
+    <firePoint x="10" y="121"/>
+    <mountPoint x="4" y="66"/>
+</weaponAnim>
+
+<animSheet name="sj_small_cannonball" w="9" h="9" fw="9" fh="9">projectiles/Small_Cannonball.png</animSheet>
+<anim name="sj_small_cannonball">
+    <sheet>sj_small_cannonball</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_small_ballista" w="320" h="50" fw="20" fh="50">weapon_ballista/Small_Ballista.png</animSheet>
+<weaponAnim name="sj_small_ballista">
+    <sheet>sj_small_ballista</sheet>
+    <desc length="16" x="0" y="0"/>
+    <chargedFrame>13</chargedFrame>
+    <fireFrame>14</fireFrame>
+    <firePoint x="17" y="49"/>
+    <mountPoint x="1" y="13"/>
+</weaponAnim>
+
+<animSheet name="sj_small_bolt" w="12" h="3" fw="12" fh="3">projectiles/Small_Bolt.png</animSheet>
+<anim name="sj_small_bolt">
+    <sheet>sj_small_bolt</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_medium_ballista" w="432" h="70" fw="27" fh="70">weapon_ballista/Medium_Ballista.png</animSheet>
+<weaponAnim name="sj_medium_ballista">
+    <sheet>sj_medium_ballista</sheet>
+    <desc length="16" x="0" y="0"/>
+    <chargedFrame>13</chargedFrame>
+    <fireFrame>14</fireFrame>
+    <firePoint x="23" y="69"/>
+    <mountPoint x="1" y="18"/>
+</weaponAnim>
+
+<animSheet name="sj_medium_bolt" w="16" h="4" fw="16" fh="4">projectiles/Medium_Bolt.png</animSheet>
+<anim name="sj_medium_bolt">
+    <sheet>sj_medium_bolt</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_large_ballista" w="672" h="104" fw="42" fh="104">weapon_ballista/Large_Ballista.png</animSheet>
+<weaponAnim name="sj_large_ballista">
+    <sheet>sj_large_ballista</sheet>
+    <desc length="16" x="0" y="0"/>
+    <chargedFrame>13</chargedFrame>
+    <fireFrame>14</fireFrame>
+    <firePoint x="35" y="101"/>
+    <mountPoint x="1" y="25"/>
+</weaponAnim>
+
+<animSheet name="sj_large_bolt" w="25" h="7" fw="25" fh="7">projectiles/Large_Bolt.png</animSheet>
+<anim name="sj_large_bolt">
+    <sheet>sj_large_bolt</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_small_catapult" w="456" h="57" fw="38" fh="57">weapon_catapult/Small_Catapult.png</animSheet>
+<weaponAnim name="sj_small_catapult">
+    <sheet>sj_small_catapult</sheet>
+    <desc length="12" x="0" y="0"/>
+    <chargedFrame>7</chargedFrame>
+    <fireFrame>8</fireFrame>
+    <firePoint x="35" y="48"/>
+    <mountPoint x="1" y="32"/>
+</weaponAnim>
+
+<animSheet name="sj_small_stone" w="7" h="7" fw="7" fh="7">projectiles/Small_Stone.png</animSheet>
+<anim name="sj_small_stone">
+    <sheet>sj_small_stone</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_medium_catapult" w="583" h="77" fw="53" fh="77">weapon_catapult/Medium_Catapult.png</animSheet>
+<weaponAnim name="sj_medium_catapult">
+    <sheet>sj_medium_catapult</sheet>
+    <desc length="11" x="0" y="0"/>
+    <chargedFrame>7</chargedFrame>
+    <fireFrame>8</fireFrame>
+    <firePoint x="48" y="64"/>
+    <mountPoint x="1" y="43"/>
+</weaponAnim>
+
+<animSheet name="sj_medium_stone" w="9" h="9" fw="9" fh="9">projectiles/Medium_Stone.png</animSheet>
+<anim name="sj_medium_stone">
+    <sheet>sj_medium_stone</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_large_catapult" w="792" h="96" fw="66" fh="96">weapon_catapult/Large_Catapult.png</animSheet>
+<weaponAnim name="sj_large_catapult">
+    <sheet>sj_large_catapult</sheet>
+    <desc length="12" x="0" y="0"/>
+    <chargedFrame>7</chargedFrame>
+    <fireFrame>8</fireFrame>
+    <firePoint x="59" y="79"/>
+    <mountPoint x="1" y="53"/>
+</weaponAnim>
+
+<animSheet name="sj_large_stone" w="14" h="14" fw="14" fh="14">projectiles/Large_Stone.png</animSheet>
+<anim name="sj_large_stone">
+    <sheet>sj_large_stone</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_small_jettison" w="456" h="57" fw="38" fh="57">weapon_jettison/Small_Jettison.png</animSheet>
+<weaponAnim name="sj_small_jettison">
+    <sheet>sj_small_jettison</sheet>
+    <desc length="12" x="0" y="0"/>
+    <chargedFrame>7</chargedFrame>
+    <fireFrame>8</fireFrame>
+    <firePoint x="35" y="48"/>
+    <mountPoint x="1" y="32"/>
+</weaponAnim>
+
+<animSheet name="sj_medium_jettison" w="583" h="77" fw="53" fh="77">weapon_jettison/Medium_Jettison.png</animSheet>
+<weaponAnim name="sj_medium_jettison">
+    <sheet>sj_medium_jettison</sheet>
+    <desc length="11" x="0" y="0"/>
+    <chargedFrame>7</chargedFrame>
+    <fireFrame>8</fireFrame>
+    <firePoint x="48" y="64"/>
+    <mountPoint x="1" y="43"/>
+</weaponAnim>
+
+<animSheet name="sj_large_jettison" w="792" h="96" fw="66" fh="96">weapon_jettison/Large_Jettison.png</animSheet>
+<weaponAnim name="sj_large_jettison">
+    <sheet>sj_large_jettison</sheet>
+    <desc length="12" x="0" y="0"/>
+    <chargedFrame>7</chargedFrame>
+    <fireFrame>8</fireFrame>
+    <firePoint x="59" y="79"/>
+    <mountPoint x="1" y="53"/>
+</weaponAnim>
+
+<animSheet name="sj_spikes_ammo" w="17" h="17" fw="17" fh="17">projectiles/Spikes.png</animSheet>
+<anim name="sj_spikes_ammo">
+    <sheet>sj_spikes_ammo</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_flame_projector" w="476" h="72" fw="34" fh="72">weapon_projector/Alchemists_Fire_Projector.png</animSheet>
+<weaponAnim name="sj_flame_projector">
+    <sheet>sj_flame_projector</sheet>
+    <desc length="14" x="0" y="0"/>
+    <chargedFrame>6</chargedFrame>
+    <fireFrame>7</fireFrame>
+    <firePoint x="25" y="1"/>
+    <mountPoint x="1" y="19"/>
+</weaponAnim>
+
+<animSheet name="sj_flame_projector_beam" w="112" h="36" fw="16" fh="36">weapon_projector/Fire_Projector_Beam.png</animSheet>
+<anim name="sj_flame_projector_beam">
+    <sheet>sj_flame_projector_beam</sheet>
+    <desc length="7" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_flame_projector_beam_end" w="245" h="113" fw="35" fh="113">weapon_projector/Fire_Projector_Beam_End3.png</animSheet>
+<anim name="sj_flame_projector_beam_end">
+    <sheet>sj_flame_projector_beam_end</sheet>
+    <desc length="7" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="sj_flamethrower_beam" w="112" h="36" fw="16" fh="36">weapon_projector/sj_flamethrower_beam.png</animSheet>
+<anim name="sj_flamethrower_beam">
+    <sheet>sj_flamethrower_beam</sheet>
+    <desc length="7" x="0" y="0"/>
+    <time>0.5</time>
+</anim>
+<animSheet name="sj_flamethrower_beam_end" w="245" h="77" fw="35" fh="77">weapon_projector/sj_flamethrower_beam_end.png</animSheet>
+<anim name="sj_flamethrower_beam_end">
+    <sheet>sj_flamethrower_beam_end</sheet>
+    <desc length="7" x="0" y="0"/>
+    <time>0.5</time>
+</anim>
+
+<!-- 
+**********************************************************************************************************************
+                                        CREW ANIMATIONS
+**********************************************************************************************************************
+-->
+
+<FTL>
+<animSheet name="sj_giff" w="315" h="455" fw="35" fh="35">people/sj_giff_base.png</animSheet>
+<anim name="sj_giff_clone">
+	<sheet>sj_giff</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_giff_death_right">
+	<sheet>sj_giff</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_giff_death_left">
+	<sheet>sj_giff</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_giff_walk_down">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_walk_right">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_walk_up">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_walk_left">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_shoot_down">
+	<sheet>sj_giff</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_shoot_right">
+	<sheet>sj_giff</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_shoot_up">
+	<sheet>sj_giff</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_shoot_left">
+	<sheet>sj_giff</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_fire_down">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_fire_right">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_fire_up">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_fire_left">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_repair">
+	<sheet>sj_giff</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_punch_up">
+	<sheet>sj_giff</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_punch_down">
+	<sheet>sj_giff</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_giff_teleport">
+	<sheet>sj_giff</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="sj_giff_type_right">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_giff_type_left">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_giff_type_up">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_giff_type_down">
+	<sheet>sj_giff</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_giff_portrait">
+	<sheet>sj_giff</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
+
+<FTL>
+<animSheet name="sj_dwarf" w="315" h="455" fw="35" fh="35">people/sj_dwarf_base.png</animSheet>
+<anim name="sj_dwarf_clone">
+	<sheet>sj_dwarf</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_death_right">
+	<sheet>sj_dwarf</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_death_left">
+	<sheet>sj_dwarf</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_walk_down">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_walk_right">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_walk_up">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_walk_left">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_shoot_down">
+	<sheet>sj_dwarf</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_shoot_right">
+	<sheet>sj_dwarf</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_shoot_up">
+	<sheet>sj_dwarf</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_shoot_left">
+	<sheet>sj_dwarf</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_fire_down">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_fire_right">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_fire_up">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_fire_left">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_repair">
+	<sheet>sj_dwarf</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_punch_up">
+	<sheet>sj_dwarf</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_punch_down">
+	<sheet>sj_dwarf</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_teleport">
+	<sheet>sj_dwarf</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="sj_dwarf_type_right">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_type_left">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_type_up">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_type_down">
+	<sheet>sj_dwarf</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_portrait">
+	<sheet>sj_dwarf</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
+
+<FTL>
+<animSheet name="sj_dwarf_power" w="315" h="455" fw="35" fh="35">people/sj_dwarf_power.png</animSheet>
+<anim name="sj_dwarf_power_clone">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_power_death_right">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_power_death_left">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_power_walk_down">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_walk_right">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_walk_up">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_walk_left">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_shoot_down">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_shoot_right">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_shoot_up">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_shoot_left">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_fire_down">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_fire_right">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_fire_up">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_fire_left">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_repair">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_punch_up">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_punch_down">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_dwarf_power_teleport">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="sj_dwarf_power_type_right">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_power_type_left">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_power_type_up">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_power_type_down">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_dwarf_power_portrait">
+	<sheet>sj_dwarf_power</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
+
+<FTL>
+<animSheet name="sj_elf" w="315" h="455" fw="35" fh="35">people/sj_elf_base.png</animSheet>
+<anim name="sj_elf_clone">
+	<sheet>sj_elf</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_elf_death_right">
+	<sheet>sj_elf</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_elf_death_left">
+	<sheet>sj_elf</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_elf_walk_down">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_walk_right">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_walk_up">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_walk_left">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_shoot_down">
+	<sheet>sj_elf</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_shoot_right">
+	<sheet>sj_elf</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_shoot_up">
+	<sheet>sj_elf</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_shoot_left">
+	<sheet>sj_elf</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_fire_down">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_fire_right">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_fire_up">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_fire_left">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_repair">
+	<sheet>sj_elf</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_punch_up">
+	<sheet>sj_elf</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_punch_down">
+	<sheet>sj_elf</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="sj_elf_teleport">
+	<sheet>sj_elf</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="sj_elf_type_right">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_elf_type_left">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_elf_type_up">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_elf_type_down">
+	<sheet>sj_elf</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="sj_elf_portrait">
+	<sheet>sj_elf</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>

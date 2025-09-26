@@ -1,0 +1,10 @@
+<small_cannon volume="9">weapons/sj_cannon2.ogg</small_cannon>
+<artillery_cannon volume="9">weapons/sj_cannon4.ogg</artillery_cannon>
+<medium_cannon volume="9">weapons/sj_cannon1.ogg</medium_cannon>
+<large_cannon volume="9">weapons/sj_cannon3.ogg</large_cannon>
+<ballista1 volume="9">weapons/sj_ballista1.ogg</ballista1>
+<ballista2 volume="9">weapons/sj_ballista2.ogg</ballista2>
+<small_catapult volume="9">weapons/sj_catapult2.ogg</small_catapult>
+<medium_catapult volume="9">weapons/sj_catapult1.ogg</medium_catapult>
+<large_catapult volume="9">weapons/sj_catapult3.ogg</large_catapult>
+<flame_projector volume="9">weapons/sj_flame_projector.ogg</flame_projector>

@@ -1,0 +1,85 @@
+<!-- 
+**********************************************************************************************************************
+                                        TABLE OF CONTENTS
+1. Bombard A, Line 13
+2. Smalljammer A, Line 32
+3. Citadel A, Line 51
+4. Man'O'War A, Line 70
+**********************************************************************************************************************
+-->
+
+<!-- 
+**********************************************************************************************************************
+                                        Bombard A
+**********************************************************************************************************************
+-->
+
+<roomLayout name="sj_room_engines_2">
+	<computerGlow name="no" x="-1" y="9" dir="DOWN" />
+</roomLayout>
+<roomLayout name="sj_room_piloting_4">
+	<computerGlow name="no" x="47" y="3" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="sj_room_shields_2">
+	<computerGlow name="no" x="-8" y="2" dir="LEFT" />
+</roomLayout>
+<roomLayout name="sj_room_weapons_4">
+	<computerGlow name="no" x="34" y="-9" dir="RIGHT" />
+</roomLayout>
+
+<!-- 
+**********************************************************************************************************************
+                                        Smalljammer A
+**********************************************************************************************************************
+-->
+
+<roomLayout name="sj_room_engines_1">
+	<computerGlow name="no" x="1" y="18" dir="DOWN" />
+</roomLayout>
+<roomLayout name="sj_room_piloting_1">
+	<computerGlow name="no" x="18" y="18" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="sj_room_shields_2a">
+	<computerGlow name="no" x="-8" y="2" dir="LEFT" />
+</roomLayout>
+<roomLayout name="sj_room_weapons_2">
+	<computerGlow name="no" x="34" y="-9" dir="UP" />
+</roomLayout>
+
+<!-- 
+**********************************************************************************************************************
+                                        Citadel A
+**********************************************************************************************************************
+-->
+
+<roomLayout name="sj_room_engines_3">
+	<computerGlow name="no" x="-16" y="18" dir="LEFT" />
+</roomLayout>
+<roomLayout name="sj_room_piloting_dwarf">
+	<computerGlow name="no" x="10" y="36" dir="LEFT" />
+</roomLayout>
+<roomLayout name="sj_room_shields_2a">
+	<computerGlow name="no" x="-8" y="2" dir="UP" />
+</roomLayout>
+<roomLayout name="sj_room_weapons_2b">
+	<computerGlow name="no" x="18" y="19" dir="DOWN" />
+</roomLayout>
+
+<!-- 
+**********************************************************************************************************************
+                                        Man'O'War A
+**********************************************************************************************************************
+-->
+
+<roomLayout name="sj_room_engines_2a">
+	<computerGlow name="no" x="-1" y="9" dir="LEFT" />
+</roomLayout>
+<roomLayout name="sj_room_piloting_1">
+	<computerGlow name="no" x="10" y="1" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="sj_room_shields_2">
+	<computerGlow name="no" x="-8" y="2" dir="LEFT" />
+</roomLayout>
+<roomLayout name="sj_room_weapons_2a">
+	<computerGlow name="no" x="34" y="-9" dir="RIGHT" />
+</roomLayout>
