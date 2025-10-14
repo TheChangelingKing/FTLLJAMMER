@@ -1,7 +1,7 @@
 <text name="tip_ballistae">Tip: Ballistae will ignore some shield layers depending on their size, and sometimes cost missiles. They also deal random damage. Enemy defense drones will shoot down incoming bolts.</text>
 <text name="tip_cannons">Tip: Cannons will ignore some shield layers depending on their size, and always cost missiles. They also deal random damage. Enemy defense drones will shoot down incoming cannonballs.</text>
 <text name="tip_catapults">Tip: Catapult shots will be blocked by a single shield bubble, regardless of the stone's damage, however they also break an additional shield. They also deal random damage. Enemy defense drones will shoot down incoming stones.</text>
-<text name="tip_jettisons">Tip: Jettisons are designed for killing crew. They fire a random number of shots, which don't do much damage individually, but can shred shields and crew. Enemy defense drones will shoot down incoming shots.</text>
+<text name="tip_jettisons">Tip: Jettisons are designed for killing crew. They fire a random number of shots, which don't do much damage individually, but can shred crew. Enemy defense drones will shoot down incoming shots.</text>
 <text name="tip_projectors">Tip: Projectors are specialized weapons which shoot beams of elemental fury. They are unable to pierce shields, but often cause chaos upon unprotected ships and their crew.</text>
 
 <!--Custom Text Style
