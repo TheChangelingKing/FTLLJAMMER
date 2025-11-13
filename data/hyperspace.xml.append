@@ -2,9 +2,9 @@
 **********************************************************************************************************************
                                         TABLE OF CONTENTS
 1. SHIPS HYPERSPACE, Line 13
-2. AUGMENTS HYPERSPACE, Line 47
-3. CREW HYPERSPACE, Line 58
-4. MISCELLANEOUS HYPERSPACE, Line 142
+2. AUGMENTS HYPERSPACE, Line 59
+3. CREW HYPERSPACE, Line 71
+4. MISCELLANEOUS HYPERSPACE, Line 176
 **********************************************************************************************************************
 -->
 
@@ -19,6 +19,7 @@
 	<mod-append:customShip name="SJ_BOMBARD_A">
 		<crewLimit>8</crewLimit>
 		<systemLimit>8</systemLimit>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
 	</mod-append:customShip>
 </mod:findLike>
 
@@ -30,6 +31,7 @@
         <hiddenAug>SHIP_AUTO</hiddenAug>
         <hiddenAug>SJ_SMALLJAMMER_TIMIDNESS</hiddenAug>
         <hiddenAug>EX_BREACH_SEALANT</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
         <autoShipForce>true</autoShipForce>
 	</mod-append:customShip>
 </mod:findLike>
@@ -39,6 +41,7 @@
 	<mod-append:customShip name="SJ_CITADEL_A">
 		<crewLimit>16</crewLimit>
 		<systemLimit>8</systemLimit>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
 	</mod-append:customShip>
 </mod:findLike>
 
@@ -47,6 +50,7 @@
 	<mod-append:customShip name="SJ_MAN'O'WAR_A">
 		<crewLimit>8</crewLimit>
 		<systemLimit>8</systemLimit>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
 	</mod-append:customShip>
 </mod:findLike>
 
